@@ -1,6 +1,6 @@
 {
   "name": "popit",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "dependencies": {
     "async": {
       "version": "0.1.22",
@@ -93,7 +93,7 @@
         },
         "debug": {
           "version": "0.7.0",
-          "from": "https://registry.npmjs.org/debug/-/debug-0.7.0.tgz",
+          "from": "debug@0.7.0",
           "resolved": "https://registry.npmjs.org/debug/-/debug-0.7.0.tgz"
         }
       }
@@ -524,29 +524,74 @@
       "resolved": "https://registry.npmjs.org/mongodb/-/mongodb-1.2.0.tgz"
     },
     "mongoose": {
-      "version": "3.4.0",
-      "from": "https://registry.npmjs.org/mongoose/-/mongoose-3.4.0.tgz",
-      "resolved": "https://registry.npmjs.org/mongoose/-/mongoose-3.4.0.tgz",
+      "version": "3.8.4",
+      "from": "mongoose@=3.8.4",
       "dependencies": {
         "hooks": {
           "version": "0.2.1",
-          "from": "https://registry.npmjs.org/hooks/-/hooks-0.2.1.tgz",
-          "resolved": "https://registry.npmjs.org/hooks/-/hooks-0.2.1.tgz"
+          "from": "hooks@0.2.1"
         },
         "mongodb": {
-          "version": "1.1.11",
-          "from": "https://registry.npmjs.org/mongodb/-/mongodb-1.1.11.tgz",
-          "resolved": "https://registry.npmjs.org/mongodb/-/mongodb-1.1.11.tgz"
+          "version": "1.3.23",
+          "from": "mongodb@1.3.23",
+          "dependencies": {
+            "bson": {
+              "version": "0.2.5",
+              "from": "bson@0.2.5"
+            },
+            "kerberos": {
+              "version": "0.0.3",
+              "from": "kerberos@0.0.3"
+            }
+          }
         },
         "ms": {
           "version": "0.1.0",
-          "from": "https://registry.npmjs.org/ms/-/ms-0.1.0.tgz",
-          "resolved": "https://registry.npmjs.org/ms/-/ms-0.1.0.tgz"
+          "from": "ms@0.1.0"
         },
         "sliced": {
-          "version": "0.0.3",
-          "from": "https://registry.npmjs.org/sliced/-/sliced-0.0.3.tgz",
-          "resolved": "https://registry.npmjs.org/sliced/-/sliced-0.0.3.tgz"
+          "version": "0.0.5",
+          "from": "sliced@0.0.5"
+        },
+        "muri": {
+          "version": "0.3.1",
+          "from": "muri@0.3.1"
+        },
+        "mpromise": {
+          "version": "0.4.3",
+          "from": "mpromise@0.4.3"
+        },
+        "mpath": {
+          "version": "0.1.1",
+          "from": "mpath@0.1.1"
+        },
+        "regexp-clone": {
+          "version": "0.0.1",
+          "from": "regexp-clone@0.0.1"
+        },
+        "mquery": {
+          "version": "0.4.1",
+          "from": "mquery@0.4.1",
+          "dependencies": {
+            "debug": {
+              "version": "0.7.0",
+              "from": "debug@0.7.0"
+            },
+            "mongodb": {
+              "version": "1.3.19",
+              "from": "mongodb@1.3.19",
+              "dependencies": {
+                "bson": {
+                  "version": "0.2.2",
+                  "from": "bson@0.2.2"
+                },
+                "kerberos": {
+                  "version": "0.0.3",
+                  "from": "kerberos@0.0.3"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -761,7 +806,8 @@
     },
     "popit-api": {
       "version": "0.0.13",
-      "from": "popit-api@0.0.13",
+      "from": "git://github.com/mysociety/popit-api.git",
+      "resolved": "git://github.com/mysociety/popit-api.git#0d6288a88157823eb06b409e6eab66699f82396d",
       "dependencies": {
         "express": {
           "version": "3.1.2",
@@ -907,7 +953,7 @@
         },
         "mongoose": {
           "version": "3.8.5",
-          "from": "mongoose@~3.8.2",
+          "from": "mongoose@~3.8.5",
           "dependencies": {
             "hooks": {
               "version": "0.2.1",
@@ -998,7 +1044,7 @@
               "from": "chalk@~0.3.0",
               "dependencies": {
                 "has-color": {
-                  "version": "0.1.2",
+                  "version": "0.1.3",
                   "from": "has-color@~0.1.0"
                 },
                 "ansi-styles": {
